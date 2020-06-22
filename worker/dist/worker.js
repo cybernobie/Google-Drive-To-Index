@@ -1,5 +1,5 @@
 self.props = {
-	title: 'GDIndex',
+	title: 'Cyber Nobie | Google Index',
 	default_root_id: 'root',
 	client_id: '202264815644.apps.googleusercontent.com',
 	client_secret: 'X4Z3ca8xfWDb1Voo-F9a7ZxJ',
@@ -452,7 +452,7 @@ self.props = {
 
     if (path.startsWith('/~_~_gdindex/resources/')) {
       const remain = path.replace('/~_~_gdindex/resources/', '');
-      const r = await fetch(`https://raw.githubusercontent.com/maple3142/GDIndex/master/web/dist/${remain}`);
+      const r = await fetch(`https://raw.githubusercontent.com/cybernobie/Google-Drive-To-Index/master/web/dist/${remain}`);
       return new Response(r.body, {
         headers: {
           'Content-Type': mime.getType(remain) + '; charset=utf-8',
@@ -659,7 +659,13 @@ self.props = {
 <li><a href="${parent}"> Parent Directory</a></li>
 ${fileht}
 </ul>
+<center>
+<div style="height:80px;width:100%;color:red">
+CyberNobie
+</div>
+</center>
 </body>
+
 </html>`;
       return new Response(ht, {
         status: 200,
